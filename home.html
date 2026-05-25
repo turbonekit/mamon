@@ -1,221 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mamon.pro</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamon - Development Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <header class="header">
-    <div class="container header__wrap">
-      <a href="#" class="logo">
-        <span class="logo__icon">
-          <svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M32 4C16.536 4 4 16.536 4 32C4 47.464 16.536 60 32 60C47.464 60 60 47.464 60 32V17H43V27H49V32C49 41.389 41.389 49 32 49C22.611 49 15 41.389 15 32C15 22.611 22.611 15 32 15H36V4H32Z" fill="#6C3BFF"/>
-          </svg>
-        </span>
-        <span class="logo__text">mamon</span>
-      </a>
 
-      <nav class="nav">
-        <a href="#services">Services</a>
-        <a href="#clients">Clients</a>
-        <a href="#team">Our team</a>
-        <a href="#contact" class="nav__btn">Contact Us</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container hero__wrap">
-        <div class="hero__content">
-          <h1>We're an independent development agency.</h1>
-          <p>
-            We understand the intricacies of web development inside-out.
-            That's why we build rock-solid Mobile and Web applications
-            enriched with user-centered visual experiences.
-          </p>
-          <a href="#contact" class="button">Contact Us</a>
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <img src="media/logo.png" alt="logo" class="logo-icon">
+                <span class="logo-text">mamon</span>
+            </div>
+            <nav class="nav">
+                <a href="#services">Services</a>
+                <a href="#clients">Clients</a>
+                <a href="#team">Our team</a>
+                <a href="#" class="btn btn-small">Contact Us</a>
+            </nav>
         </div>
-      </div>
-    </section>
+    </header>
 
-    <section class="services" id="services">
-      <div class="container">
-        <p class="section-label">our services</p>
+    <main>
+        <section class="hero container">
+            <h1>We're an independent development agency.</h1>
+            <p>We understand the intricacies of web development inside-out. That's why we build rock-solid Mobile and Web applications enriched with user-centered visual experiences.</p>
+            <a href="#" class="btn">Contact Us</a>
+        </section>
 
-        <div class="services__grid">
-          <article class="service-card">
-            <div class="service-card__icon">
-              <i class="fa-solid fa-mobile-screen-button"></i>
+        <section id="services" class="container">
+            <div class="divider">
+                <span>OUR SERVICES</span>
             </div>
-            <div>
-              <h3>Mobile Development</h3>
-              <p>We develop mobile apps for all contemporary mobile platforms. Mamon team builds native and cross-platform solutions.</p>
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-icon-box">
+                        <img src="media/smartphone.svg" alt="" class="service-icon">
+                    </div>
+                    <div class="service-text">
+                        <h2>Mobile Development</h2>
+                        <p>We develop mobile apps for all contemporary mobile platforms. Mamon team builds native and cross-platform solutions.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon-box">
+                        <img src="media/monitor.svg" alt="" class="service-icon">
+                    </div>
+                    <div class="service-text">
+                        <h2>Web Development</h2>
+                        <p>Mamon offers full range of services from various CMS and frameworks based websites to complex ERP/CRM solutions and e-commerce stores.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon-box">
+                        <img src="media/layers.svg" alt="" class="service-icon">
+                    </div>
+                    <div class="service-text">
+                        <h2>Product Design</h2>
+                        <p>We create design given the product audience, goal, business domain, technology and the platform for the solution.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon-box">
+                        <img src="media/test.svg" alt="" class="service-icon">
+                    </div>
+                    <div class="service-text">
+                        <h2>Quality Assurance</h2>
+                        <p>Our QA team ensures high standard of quality of products delivered.</p>
+                    </div>
+                </div>
             </div>
-          </article>
+        </section>
 
-          <article class="service-card">
-            <div class="service-card__icon">
-              <i class="fa-solid fa-desktop"></i>
+        <section id="clients" class="container">
+            <div class="divider">
+                <span>OUR CLIENTS</span>
             </div>
-            <div>
-              <h3>Web Development</h3>
-              <p>Mamon offers full range of services from various CMS and frameworks based websites to complex ERP/CRM solutions.</p>
+            <div class="clients-list">
+                <div class="client-item"><img src="media/our-clients/logo-lightspeed.png" alt="lightspeed" class="client-logo"></div>
+                <div class="client-item"><img src="media/our-clients/logo-trvl.png" alt="TRVL" class="client-logo"></div>
+                <div class="client-item"><img src="media/our-clients/logo-spider-strategies.png" alt="Spider Strategies" class="client-logo"></div>
+                <div class="client-item"><img src="media/our-clients/logo-tripadvisor.png" alt="tripadvisor" class="client-logo"></div>
+                <div class="client-item"><img src="media/our-clients/logo-shutterfly.png" alt="Shutterfly" class="client-logo"></div>
+                <div class="client-item"><img src="media/our-clients/logo-decos.png" alt="DECOS" class="client-logo"></div>
+                <div class="client-item"><img src="media/our-clients/logo-tiqets.png" alt="Tiqets" class="client-logo"></div>
+                <div class="client-item"><img src="media/our-clients/logo-hotelchamp.png" alt="Hotelchamp" class="client-logo"></div>
+                <div class="client-item"><img src="media/our-clients/logo-flitsmeister.png" alt="Flitsmeister" class="client-logo"></div>
+                <div class="client-item"><img src="media/our-clients/logo-sap.png" alt="SAP" class="client-logo"></div>
+                <div class="client-item"><img src="media/our-clients/logo-redkix.png" alt="redkix" class="client-logo"></div>
+                <div class="client-item"><img src="media/our-clients/logo-nos.png" alt="NOS" class="client-logo"></div>
             </div>
-          </article>
+        </section>
 
-          <article class="service-card">
-            <div class="service-card__icon">
-              <i class="fa-solid fa-layer-group"></i>
+        <section id="team" class="container">
+            <div class="divider">
+                <span>OUR TEAM</span>
             </div>
-            <div>
-              <h3>Product Design</h3>
-              <p>We create design given the product audience, goal, business domain, technology and the platform for the solution.</p>
+            <div class="team-list">
+                <div class="team-member">
+                    <img src="media/our-team/vadim.png" alt="Vadim">
+                    <div class="team-info">
+                        <h3>Vadim</h3>
+                        <p>Managing Director</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="media/our-team/sergey.png" alt="Sergey">
+                    <div class="team-info">
+                        <h3>Sergey</h3>
+                        <p>Technology Director</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="media/our-team/andrey.png" alt="Andrey">
+                    <div class="team-info">
+                        <h3>Andrey</h3>
+                        <p>Front-end Developer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="media/our-team/alex.png" alt="Alex">
+                    <div class="team-info">
+                        <h3>Alex</h3>
+                        <p>Front-end Developer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="media/our-team/agneshka.png" alt="Agneshka">
+                    <div class="team-info">
+                        <h3>Agneshka</h3>
+                        <p>Mobile Developer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="media/our-team/dmitry.png" alt="Dmitry">
+                    <div class="team-info">
+                        <h3>Dmitry</h3>
+                        <p>Back-end Developer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="media/our-team/artyom.png" alt="Artyom">
+                    <div class="team-info">
+                        <h3>Artyom</h3>
+                        <p>Back-end Developer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="media/our-team/evgeny.png" alt="Evgeny">
+                    <div class="team-info">
+                        <h3>Evgeny</h3>
+                        <p>Product Designer</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="media/our-team/tom.png" alt="Tom">
+                    <div class="team-info">
+                        <h3>Tom</h3>
+                        <p>Product Designer</p>
+                    </div>
+                </div>
             </div>
-          </article>
+        </section>
+    </main>
 
-          <article class="service-card">
-            <div class="service-card__icon">
-              <i class="fa-solid fa-file-lines"></i>
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="logo">
+                <img src="media/logo.png" alt="logo" class="logo-icon">
             </div>
-            <div>
-              <h3>Quality Assurance</h3>
-              <p>Our QA team ensures high standard of quality of products delivered by Mamon.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-behance"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-cube"></i></a>
             </div>
-          </article>
         </div>
-      </div>
-    </section>
+    </footer>
 
-    <section class="clients" id="clients">
-      <div class="container">
-        <p class="section-label">our clients</p>
-
-        <div class="clients__grid">
-          <span>lightspeed</span>
-          <span>TRVL</span>
-          <span>spider strategies</span>
-          <span>tripadvisor</span>
-          <span>Shutterfly</span>
-          <span>DeCOS</span>
-          <span>Tiqets</span>
-          <span>Hotelchamp</span>
-          <span>Flitsmeister</span>
-          <span>SAP</span>
-          <span>redkix</span>
-          <span>NOS</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="team" id="team">
-      <div class="container">
-        <p class="section-label">our team</p>
-
-        <div class="team__grid">
-          <article class="member">
-            <div class="member__avatar avatar--purple"></div>
-            <div>
-              <h3>Vadim</h3>
-              <p>Managing Director</p>
-            </div>
-          </article>
-
-          <article class="member">
-            <div class="member__avatar avatar--orange"></div>
-            <div>
-              <h3>Sergey</h3>
-              <p>Technology Director</p>
-            </div>
-          </article>
-
-          <article class="member">
-            <div class="member__avatar avatar--blue"></div>
-            <div>
-              <h3>Andrey</h3>
-              <p>Front-end Developer</p>
-            </div>
-          </article>
-
-          <article class="member">
-            <div class="member__avatar avatar--green"></div>
-            <div>
-              <h3>Alex</h3>
-              <p>Front-end Developer</p>
-            </div>
-          </article>
-
-          <article class="member">
-            <div class="member__avatar avatar--pink"></div>
-            <div>
-              <h3>Agneshka</h3>
-              <p>Mobile Developer</p>
-            </div>
-          </article>
-
-          <article class="member">
-            <div class="member__avatar avatar--yellow"></div>
-            <div>
-              <h3>Dmitry</h3>
-              <p>Back-end Developer</p>
-            </div>
-          </article>
-
-          <article class="member">
-            <div class="member__avatar avatar--teal"></div>
-            <div>
-              <h3>Artyom</h3>
-              <p>Back-end Developer</p>
-            </div>
-          </article>
-
-          <article class="member">
-            <div class="member__avatar avatar--red"></div>
-            <div>
-              <h3>Evgeny</h3>
-              <p>Product Designer</p>
-            </div>
-          </article>
-
-          <article class="member">
-            <div class="member__avatar avatar--gray"></div>
-            <div>
-              <h3>Tom</h3>
-              <p>Product Designer</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" id="contact">
-    <div class="container footer__wrap">
-      <a href="#" class="logo">
-        <span class="logo__icon">
-          <svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M32 4C16.536 4 4 16.536 4 32C4 47.464 16.536 60 32 60C47.464 60 60 47.464 60 32V17H43V27H49V32C49 41.389 41.389 49 32 49C22.611 49 15 41.389 15 32C15 22.611 22.611 15 32 15H36V4H32Z" fill="#6C3BFF"/>
-          </svg>
-        </span>
-      </a>
-
-      <div class="footer__socials">
-        <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
